@@ -37,7 +37,7 @@ import botaoDeleta from './componentes/deleta.js'
             item.appendChild(divContent)
             item.appendChild(divButtons)
             divButtons.appendChild(botaoConclui())
-            divButtons.appendChild(botaoDeleta())
+            divButtons.appendChild(botaoDeleta(lists))
             listContainer.appendChild(item)
 
         })
