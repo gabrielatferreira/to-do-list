@@ -19,13 +19,13 @@ const deletarTarefa = (evento) => {
 
     let itemEncontrado = null
 
-    listsExternal.forEach(item => {
+    listsExternal.forEach((item, index) => {
         if (item.name == tarefaCompleta.firstChild.innerHTML) {
-            itemEncontrado = item
+            itemEncontrado = index
         }
     })
 
-    listsExternal.splice(itemEncontrado)
+    listsExternal.splice(itemEncontrado, 1)
 
     tarefaCompleta.remove()
 

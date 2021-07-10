@@ -19,7 +19,7 @@ import botaoDeleta from './componentes/deleta.js'
     })
 
     function createList(name) {
-        return {id: Date.now().toString(), name: name }
+        return {id: Date.now().toString(), name: name, toggle: "none"}
     }
 
     function render() {
@@ -32,11 +32,14 @@ import botaoDeleta from './componentes/deleta.js'
             divContent.classList.add('div-content')
             divButtons.classList.add('div-buttons')
             divContent.innerText = list.name
+            if (list.toggle == "done") {
+                divContent.classList.toggle('done')
+            }
             listContainer.appendChild(item)
 
             item.appendChild(divContent)
             item.appendChild(divButtons)
-            divButtons.appendChild(botaoConclui())
+            divButtons.appendChild(botaoConclui(lists))
             divButtons.appendChild(botaoDeleta(lists))
             listContainer.appendChild(item)
 
