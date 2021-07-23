@@ -64,7 +64,10 @@ body {
 }
 
 .check-button {
-    margin-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: green;
+    margin-left: 15px;
     background-color: #000;
     border: 1px solid #000;
     border-radius: 5px;
@@ -80,7 +83,10 @@ body {
 }
 
 .delete-button {
-    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: red;
+    margin-left: 30px;
     background-color: #000;
     border: 1px solid #000;
     border-radius: 5px;
@@ -98,6 +104,7 @@ body {
 .div-content {
     width: 60%;
     display: inline-block;
+    word-break: break-word;
 }
 
 .div-buttons {

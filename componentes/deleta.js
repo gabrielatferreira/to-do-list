@@ -5,7 +5,7 @@ const botaoDeleta = (lists) => {
     const botaoDeletar = document.createElement('button')
 
     botaoDeletar.classList.add('delete-button')
-    botaoDeletar.innerHTML = '❌'
+    botaoDeletar.innerHTML = 'DEL'
     botaoDeletar.addEventListener('click', deletarTarefa)
 
     return botaoDeletar

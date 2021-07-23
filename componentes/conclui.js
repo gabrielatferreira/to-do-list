@@ -5,7 +5,7 @@ const botaoConclui = (lists) => {
     const botaoConcluir = document.createElement('button')
 
     botaoConcluir.classList.add('check-button')
-    botaoConcluir.innerText = '✔️'
+    botaoConcluir.innerText = 'FEITO'
     botaoConcluir.addEventListener('click', concluirTarefa)
 
     return botaoConcluir
